@@ -51,8 +51,10 @@ public class Vector2D {
      * @return the sum of this vector and the other vector.
      */
     public Vector2D add( Vector2D v ) {
+        double xSum = this.x + v.x;
+        double ySum = this.y + v.y;
 
-      return new Vector2D( 0.0, 0.0 );
+      return new Vector2D(xSum, ySum);
     } // add (Vector2D )
     
     /**
