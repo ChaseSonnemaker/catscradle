@@ -30,7 +30,8 @@ public class Vector2D {
      * @param y is the y coordinate of the point.
      */
     public Vector2D(double x, double y) {
-
+        this.x = x;
+        this.y = y;
     } // Vector2D( double, double )
 
     /**
