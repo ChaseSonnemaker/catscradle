@@ -181,8 +181,7 @@ public class Vector2D {
      * @return the value of the vector's x component. 
      */
     public double getX() {
-//        return this.x;
-      return 0.0;
+      return this.x;
     } // getX()
     
      /**
@@ -193,8 +192,7 @@ public class Vector2D {
      * @return the value of the vector's y component. 
      */
     public double getY() {
-
-      return 0.0;
+      return this.y;
     } // getY()
     
     /**
