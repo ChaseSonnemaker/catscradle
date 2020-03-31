@@ -217,8 +217,7 @@ public class Vector2D {
      */
     @Override
     public String toString() {
-
-      return "";
+      return "(" + this.x + ", " + this.y + ")";
     } // toString()
     
     /**
