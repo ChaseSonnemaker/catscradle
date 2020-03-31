@@ -66,11 +66,13 @@ public class Vector2D {
      * 
      * @param xFactor is the amount of horizontal stretching.
      * @param yFactor is the amount of vertical stretching.
-     * @return 
+     * @return New stretched vector.
      */
     public Vector2D scale( double xFactor, double yFactor ) {
-
-      return new Vector2D( 0.0, 0.0 );
+        double xStretched = xFactor * this.x;
+        double yStretched = yFactor * this.y;
+        
+      return new Vector2D(xStretched, yStretched);
     } // scale( double )
     
     /**
@@ -91,8 +93,7 @@ public class Vector2D {
      * @return a stretched (or contracted) vector.
      */
     public Vector2D scale( double factor ) {
-
-      return new Vector2D( 0.0, 0.0 );
+      return this.scale(factor, factor);
     } // scale( double )
     
     /**
