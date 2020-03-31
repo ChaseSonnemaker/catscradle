@@ -1,6 +1,9 @@
 
 package com.eonsahead.catscradle;
 
+import static java.lang.Math.cos;
+import static java.lang.Math.sin;
+
 /**
  * This class models a vector in two dimensions.
  * 
@@ -112,8 +115,10 @@ public class Vector2D {
      * @return is a rotated version of this vector.
      */
     public Vector2D rotate( double angle ) {
-
-      return new Vector2D( 0.0, 0.0 );
+        double xRotated = this.x * cos(angle) - this.y * sin(angle);
+        double yRotated = this.x * sin(angle) - this.y * cos(angle);
+        
+      return new Vector2D(xRotated, yRotated);
     } // rotate( double )
     
     /**
