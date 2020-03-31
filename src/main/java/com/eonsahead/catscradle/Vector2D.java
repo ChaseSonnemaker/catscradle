@@ -134,8 +134,11 @@ public class Vector2D {
      */
     public Vector2D rotateScaleTranslate( double angle, double scaleX, 
             double scaleY, double deltaX, double deltaY ) {
-      
-      return new Vector2D( 0.0, 0.0 );
+        
+        Vector2D rotated = this.rotate(angle);
+        Vector2D scaled = rotated.scale(scaleX, scaleY);
+
+      return scaled.add(new Vector2D(deltaX, deltaY));
     } // rotateScaleTranslate( double, double, double, double, double )
     
     /**
