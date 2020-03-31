@@ -159,8 +159,10 @@ public class Vector2D {
      * components.
      */
     public double dot( Vector2D v ) {
-
-      return 0.0;
+        double xProduct = this.x * v.x;
+        double yProduct = this.y * v.y;
+        
+      return xProduct + yProduct;
     } // dot( Vector2D )
     
     /**
