@@ -3,6 +3,7 @@ package com.eonsahead.catscradle;
 
 import static java.lang.Math.cos;
 import static java.lang.Math.sin;
+import static java.lang.Math.sqrt;
 
 /**
  * This class models a vector in two dimensions.
@@ -182,8 +183,7 @@ public class Vector2D {
      * @return the length of the vector.
      */
     public double magnitude() {
-
-      return 0.0;
+      return sqrt(this.dot(this));
     } // magnitude()
     
     /**
